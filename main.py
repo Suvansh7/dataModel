@@ -25,7 +25,7 @@ def set_of_3():
 
 def single_sheet_set():
 
-    for i in range(1):
+    for i in range(4):
         img=np.array(Image.open(f"C:\\Users\\Lenovo\\Desktop\\MiniProject\\collection\\{i+1}.jpg"))
         detect(img)
 
