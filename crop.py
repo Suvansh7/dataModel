@@ -1,3 +1,6 @@
+def sheet(img):
+    return 0
+
 def sheet1(img):
     import numpy as np
     import matplotlib.pyplot as plt
