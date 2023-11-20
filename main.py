@@ -12,9 +12,11 @@ def set_of_3():
     
         img = np.array(Image.open(f"C:\\Users\\Lenovo\\Desktop\\MiniProject\\set\\sheet1\\{i}.jpg"))
         img=img.sum(2) / (255*3)
+        # plt.imshow(img)
+        # plt.show()
         cropped = cp(img)
         
-        locate1(cropped,1,0)
+        locate1(cropped,1,0,i)
 
 def single_sheet_set():
 

@@ -13,29 +13,29 @@ def cp(img):
 
     q1 = cord(0,20,0,20,img)          
     print(q1)
-    y1 = q1[0]
-    y2 = y1 + 110
-    x1 =  q1[1]
-    x2 = x1 + 120
+    y1 = q1[0] - 4
+    y2 = y1 + 117
+    x1 =  q1[1] - 4
+    x2 = x1 + 114
 
     lst = []
     for row in range(7):
         r = 2
         for column in range(5):
              
-             imgg = img [ y1+5:y2-5 , x1+5:x2-5]
+             imgg = img [ y1+6:y2-6 , x1+6:x2-6]
              lst.append(imgg)
             #  plt.imshow(imgg)
             #  plt.show()
-             x1 = x1 + 120 - r
-             x2 = x2 + 120 - r
+             x1 = x1 + 114
+             x2 = x2 + 114
              r = r + r
              
 
-        y1 = y1 + 110
-        y2 = y2 + 110
+        y1 = y1 + 115
+        y2 = y2 + 115
         x1 =  q1[1]
-        x2 = x1 + 110
+        x2 = x1 + 114
  
 
     imgg=img[q1[0]:q1[0]+108,q1[1]:q1[1]+110]
